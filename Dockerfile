@@ -1,7 +1,7 @@
 FROM ubuntu:18.10
 
 RUN apt-get update && apt-get upgrade -y && \
-  apt-get install -y build-essential git bzip2 wget && \
+  apt-get install -y build-essential git bzip2 wget curl jq && \
   apt-get clean 
 
 ENV VERSION_SHORT 7-2018q2
